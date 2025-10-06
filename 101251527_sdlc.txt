@@ -5,4 +5,4 @@ It includes integration of DevOps practices, which would improve code quality,
  reduce deployment times, automate testing, and hence faster releases.
   The automation and continuous delivery further help focus on zero or
    lessening human errors, ensuring that the applications are more reliable 
-   in a production environment.}
+   in a production environment.
