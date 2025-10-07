@@ -1,0 +1,26 @@
+name: CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Run basic CI checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify environment
+        run: |
+          echo "🚀 CI workflow is running on ${{ runner.os }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "Repository: ${{ github.repository }}"
+
+      - name: List repository files
+        run: ls -R
+
+      - name: Run mock tests
+        run: |
+          echo "All checks passed successfully!"
+          echo "This CI run confirms that GitHub Actions is correctly configured."
